@@ -1,0 +1,23 @@
+<resources>
+	<string name="app_name">SCALE-UP Classroom</string>
+
+	<string name="sign_in_email">Email:</string>
+	<string name="sign_in_password">Password:</string>
+	<string name="sign_in_submit">Submit</string>
+	<string name="sign_in_email_empty">"Email cannot be empty."</string>
+	<string name="sign_in_password_empty">"Password cannot be empty."</string>
+	<string name="sign_in_welcome">"Welcome to myViewBoard"</string>
+	<string name="sign_in_classroom">"SCALE-UP Classroom"</string>
+	<string name="sign_in_description">"A solution for a student-centred active learning concept, enabling engaging interaction. The SCALE-UP Classroom is built to connect multiple Viewsonic ViewBoards and create learning spaces to facilitate interactions between huddles of students who work on interesting activities and interact with the teacher."</string>
+	<string name="sign_in_let_start">"We’re happy you’re here. Let’s start."</string>
+    <string name="title_activity_splash">Splash</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

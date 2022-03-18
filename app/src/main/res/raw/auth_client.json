@@ -1,0 +1,13 @@
+{
+  "client_id": "mvb-scale-up",
+  "redirect_uri": "com.viewsonic.myviewboard.scaleup:/oauthredirect",
+  "end_session_redirect_uri": "com.viewsonic.myviewboard.scaleup:/logout",
+  "clientSecret:":"u.4q94eji6ru4cp32jigj94ek",
+  "scopes": [
+    "openid",
+    "profile",
+    "email",
+    "offline_access"
+  ],
+  "discovery_uri": "https://auth.stage.myviewboard.com/oidc/v1/.well-known/openid-configuration}"
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/baseFrame"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".SplashActivity">
+
+	<ImageView
+		android:id="@+id/img_bg"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scaleType="fitXY"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="parent"
+		app:layout_constraintStart_toStartOf="@+id/baseFrame"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/ic_background_image" />
+
+	<androidx.appcompat.widget.LinearLayoutCompat
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#40404040"
+		android:orientation="vertical"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent">
+
+		<androidx.appcompat.widget.SwitchCompat
+			android:id="@+id/switchSignInUI"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:checked="false"
+			android:text="Sign-In UI"
+			android:textOff="TBD"
+			android:textOn="Whiteboard"
+			tools:ignore="HardcodedText" />
+
+		<TextView
+			android:id="@+id/textUrl"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="gone"
+			android:textColor="@android:color/black" />
+
+		<TextView
+			android:id="@+id/textMessage"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="gone"
+			android:textColor="@android:color/black" />
+
+	</androidx.appcompat.widget.LinearLayoutCompat>
+
+	<TextView
+		android:id="@+id/title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="650dp"
+		android:layout_marginTop="200dp"
+		android:text="@string/sign_in_welcome"
+		android:textColor="@color/white"
+		android:textSize="25dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/subtitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:text="@string/sign_in_classroom"
+		android:textColor="@color/white"
+		android:textSize="25dp"
+		app:layout_constraintStart_toStartOf="@+id/title"
+		app:layout_constraintTop_toBottomOf="@+id/title" />
+
+	<TextView
+		android:id="@+id/text_description"
+		android:layout_width="250dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+		android:text="@string/sign_in_description"
+		android:textColor="@color/white"
+		android:textSize="12dp"
+		app:layout_constraintStart_toStartOf="@+id/subtitle"
+		app:layout_constraintTop_toBottomOf="@+id/subtitle" />
+
+	<TextView
+		android:id="@+id/text_description2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+		android:text="@string/sign_in_let_start"
+		android:textColor="@color/white"
+		android:textSize="12dp"
+		app:layout_constraintStart_toStartOf="@+id/text_description"
+		app:layout_constraintTop_toBottomOf="@+id/text_description" />
+
+	<Button
+		android:id="@+id/loginButton"
+		android:layout_width="80dp"
+		android:layout_height="35dp"
+		android:layout_marginTop="38dp"
+		app:backgroundTint="@null"
+		android:background="@drawable/button_round"
+		android:text="Login"
+		android:textSize="9dp"
+		app:layout_constraintStart_toStartOf="@+id/text_description2"
+		app:layout_constraintTop_toBottomOf="@+id/text_description2"
+		/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
